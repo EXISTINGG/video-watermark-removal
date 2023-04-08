@@ -47,7 +47,7 @@
       <button bindtap="SaveCover">保存封面</button>
     </view>
     <view>
-      <button bindtap="copyVideoUrl" type="primary">复制视频连接</button>
+      <button bindtap="copyVideoUrl" type="primary">复制链接</button>
     </view>
     <view>
       <button bindtap="Savevideo">保存视频</button>
