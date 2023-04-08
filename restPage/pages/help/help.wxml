@@ -1,0 +1,21 @@
+<!--pages/help/help.wxml-->
+<view class="warp">
+  <text style="color: #141414;">《<text style="color: red;">水印除</text>》图片视频去水印教程</text>
+  <view>🌟第1步：打开想要去水印的APP点击页面上的分享按钮选择【复制链接】</view>
+  <view>
+    <image src="https://s1.ax1x.com/2023/03/03/ppkdY1H.jpg" mode="widthFix" />
+    <image src="https://s1.ax1x.com/2023/03/03/ppkdNjA.jpg" mode="widthFix" />
+  </view>
+  <view>
+    🌟第2步：复制链接后返回小程序，点击"<text style="font-size: medium;color: red;">一键粘贴</text>"按钮
+  </view>
+  <view>
+    <image src="https://s1.ax1x.com/2023/03/03/ppkdanI.jpg" mode="widthFix" />
+  </view>
+  <view>
+    🌟第3步：点击"<text style="font-size: medium;color: red;">开始解析</text>"按钮
+  </view>
+  <view>
+    <image src="https://s1.ax1x.com/2023/03/03/ppkddBt.jpg" mode="widthFix" />
+  </view>
+</view>

@@ -1,0 +1,41 @@
+/* pages/more/more.wxss */
+.warp {
+  width: 100%;
+  /* height: 1000rpx; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(76, 116, 236);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+  width: 90%;
+  height: 150rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
+}
+
+.item image {
+  margin-left: 20rpx;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+  border: solid skyblue 2rpx;
+}
+
+.item .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  width: 80%;
+  height: 100%;
+  /* background-color: red; */
+}

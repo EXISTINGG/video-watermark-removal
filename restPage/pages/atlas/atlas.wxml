@@ -1,0 +1,38 @@
+<!--pages/atlas/atlas.wxml-->
+<view class="warp">
+  <view class="cont">
+    <view class="top">
+      <view>
+        <input type="text" placeholder="请输入图集链接:" bindchange="handleChange" value="{{url}}" />
+      </view>
+      <view class="footer">
+        <view>
+          <button bindtap="handlePaste">一键粘贴</button>
+        </view>
+        <view>
+          <button bindtap="cleartext">清空</button>
+        </view>
+        <view>
+          <button bindtap="hanldeStart">开始解析</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<swiper indicator-dots circular hidden="{{videoHidden}}" class="swiper" current="{{current}}" bindchange="handlecheck" easing-function="easeInOutCubic">
+  <swiper-item class="item" wx:for="{{atlasData.pics}}" wx:key="index">
+    <image src="{{item}}" mode="heightFix" />
+  </swiper-item>
+</swiper>
+<view class="f footer" hidden="{{videoHidden}}">
+  <view>
+    <button bindtap="SaveAllImg">保存所有图片</button>
+  </view>
+  <view>
+    <button bindtap="SaveImg">保存当前图片</button>
+  </view>
+  <view>
+    <button bindtap="SaveCover">保存封面</button>
+  </view>
+</view>
+<!-- <ad unit-id="adunit-4648ef1b48977b1f" style="position: fixed;bottom: 0;left: 0;"></ad> -->

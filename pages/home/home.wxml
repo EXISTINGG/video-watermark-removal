@@ -1,0 +1,86 @@
+<!--pages/home/home.wxml-->
+<swiper class="banner">
+  <swiper-item class="item">
+    <image src="/images/banner.jpg" mode="widthFix" />
+  </swiper-item>
+</swiper>
+<view class="announcement">
+  <!-- <image src="" mode=""/> -->
+  <text style="font-size: 24rpx;line-height: 50rpx;color: cornflowerblue;margin-left: 20rpx;">80多个短视频去水印和常用图集解析，主页批量支持抖音快手主页</text>
+</view>
+<view class="cont">
+  <view class="top">
+    <view>
+      <input type="text" placeholder="请输入视频链接:" bindchange="handleChange" value="{{url}}" />
+    </view>
+    <view class="footer">
+      <view>
+        <button bindtap="handlePaste">一键粘贴</button>
+      </view>
+      <view>
+        <button bindtap="cleartext">清空</button>
+      </view>
+      <view>
+        <button bindtap="hanldeStart" type="primary">开始解析</button>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="video" hidden="{{videoHidden}}">
+  <view class="video_top">
+    <video src="{{videoData.playAddr}}" />
+  </view>
+</view>
+<view class="video_bottom" hidden="{{videoHidden}}">
+  <text style="color:cornflowerblue">视频文案</text>
+  <text>{{videoData.desc}}</text>
+  <!-- <input type="text" value="{{videoData.desc}}" /> -->
+  <hr/>
+  <text style="color:cornflowerblue">视频链接</text>
+  <text>{{videoData.playAddr}}</text>
+  <!-- <input type="text" value="{{videoData.playAddr}}" /> -->
+  <view class="footer video_bottom_b">
+    <view>
+      <button bindtap="copytext" type="primary">复制文案</button>
+    </view>
+    <view>
+      <button bindtap="SaveCover">保存封面</button>
+    </view>
+    <view>
+      <button bindtap="copyVideoUrl" type="primary">复制视频连接</button>
+    </view>
+    <view>
+      <button bindtap="Savevideo">保存视频</button>
+    </view>
+  </view>
+</view>
+<view class="copy">
+  视频及图片均来自平台,本小程序不做任何存储
+</view>
+<view class="tool">
+  <view style="background-color: #3e3d44;" bindtap="imgAll">
+    <text>抖音图集解析</text>
+    <image src="/images/dy.png" mode="widthFix" />
+  </view>
+  <view style="background-color: #3e3d44;" bindtap="imgAll">
+    <text>快手图集解析</text>
+    <image src="/images/ks.png" mode="widthFix" />
+  </view>
+  <view style="background-color: #3e3d44;" bindtap="imgAll">
+    <text>所有图集解析</text>
+    <image src="/images/ks.png" mode="widthFix" />
+  </view>
+  <!-- <view style="background-color: #3e3d44;">
+    <text>快手主页视频解析</text>
+    <image src="/images/ks.png" mode="widthFix" />
+  </view>
+  <view style="background-color: #3e3d44;">
+    <text>快手主页视频解析</text>
+    <image src="/images/ks.png" mode="widthFix" />
+  </view> -->
+</view>
+<!-- <ad unit-id="adunit-4648ef1b48977b1f" ad-intervals="30"></ad> -->
+<view style="font-size: 20rpx;margin-top: 10rpx;">
+  <text style="color: red;font-size: 30rpx;font-weight: 800;">支持</text>
+  抖音、快手、小红书、微博、微视、今日头条、西瓜视频、哔哩哔哩、秒拍、美拍、皮皮虾、皮皮搞笑、全民小视频、火山小视频、好看视频、看点视频、全民K歌、看点视频、看点快报、度小视、QQ看点、陌陌、唱吧、YY、小咖秀、糖豆、最左、配音秀、酷狗音乐、酷我音乐、看看视频、梨视频、网易云音乐、大众点评、虎牙视频、懂车帝、剪映、趣头条、美图秀秀、刷宝、迅雷、京东、淘宝、天猫、拼多多、微信公众号、火锅视频、轻视频、 百度视频、QQ浏览器、uc浏览器、oppo浏览器、油果浏览器、新片场、万能钥匙WiFi、知乎、腾讯新闻、人民日报、开眼、微叭、微云、快看点、TikTok、youtube、twitter、VUE、vigo、ACfun、now、等等80多个短视频去水印和常用图集解析。
+</view>

@@ -1,0 +1,44 @@
+<!--pages/mine/mine.wxml-->
+<view class="warp">
+  <view class="top" bindtap="handleTop">
+    <image src="{{userInfo.avatarUrl?userInfo.avatarUrl:'https://s1.ax1x.com/2023/03/03/ppkdZp4.png'}}" mode="widthFix" />
+    <view class="name">{{userInfo.nickName}}</view>
+  </view>
+  <view class="center">
+    <view class="center_warp">
+      <view>
+        <text>解析次数</text>
+        <view style="text-align: center;">
+          <text style="font-weight: 700;font-size: 50rpx;">{{time >= 9999 ? '9999+' : time}}</text>次
+        </view>
+      </view>
+      <view>
+        <text>小程序版本</text>
+        <view style="text-align: center;">
+          <text style="font-weight: 700;font-size: 50rpx;">v1.0.3</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <mp-cells ext-class="my-cells">
+    <mp-cell class="item" bindtap="handleHelp">
+      <view slot="icon">
+        <mp-icon icon="clip" type="field" color="#5372E7" size="{{30}}"></mp-icon>
+      </view>
+      <view style="margin-left: 10rpx;">使用教程</view>
+      <view slot="footer">
+        <mp-icon icon="arrow" color="#5372E7" size="{{15}}"></mp-icon>
+      </view>
+    </mp-cell>
+    <mp-cell class="item" bindtap="jiaTIme">
+      <view slot="icon">
+        <mp-icon icon="clip" type="field" color="#5372E7" size="{{30}}"></mp-icon>
+      </view>
+      <view style="margin-left: 10rpx;">增加解析次数</view>
+      <view slot="footer">
+        <mp-icon icon="arrow" color="#5372E7" size="{{15}}"></mp-icon>
+      </view>
+    </mp-cell>
+    <!-- <ad  unit-id="adunit-05c50ad8883a0ee1" ad-type="video" ad-theme="white"></ad> -->
+  </mp-cells>
+</view>

@@ -1,0 +1,18 @@
+/* pages/help/help.wxss */
+.warp {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.warp text {
+  text-align: center;
+}
+
+.warp view {
+  font-size: 26rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}

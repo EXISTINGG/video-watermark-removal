@@ -1,0 +1,69 @@
+/* pages/atlas/atlas.wxss */
+.warp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.warp image {
+  height: 500rpx;
+}
+
+.cont input {
+  box-sizing: border-box;
+  text-indent: 20rpx;
+  width: 99%;
+  height: 80rpx;
+  border-radius: 10rpx;
+  border: 3rpx solid #f3f4f5;
+}
+
+.footer button {
+  margin-bottom: 10rpx;
+  width: 210rpx !important;
+  font-size: 24rpx;
+  font-weight: 800;
+}
+
+.footer {
+  /* background-color: rebeccapurple; */
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.cont>.top {
+  flex-wrap: wrap;
+  height: 90%;
+  width: 90%;
+  border-radius: 10rpx;
+  border: 3rpx solid #7b7c7c;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200rpx;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+}
+
+.f {
+  margin-top: 20rpx;
+  justify-content: space-around;
+}
+
+.swiper {
+  height: 500rpx;
+}

@@ -1,0 +1,39 @@
+<!--pages/more/more.wxml-->
+<view class="warp">
+  <view class="item" bindtap="goto">
+    <image src="https://s1.ax1x.com/2023/03/19/ppYmzk9.png" mode="heightFix" />
+    <view class="right">
+      <text style="font-size: 35rpx;font-weight: 600;">头像搜搜</text>
+      <view style="font-size: 25rpx">超多头像资源,每天都更新</view>
+    </view>
+  </view>
+  <view class="item">
+    <image src="https://s1.ax1x.com/2023/03/19/ppYnnfI.png" mode="heightFix" />
+    <view class="right">
+      <text style="font-size: 35rpx;font-weight: 600;opacity: 0.5;">敬请期待</text>
+      <view style="font-size: 25rpx;opacity: 0.5;">敬请期待</view>
+    </view>
+  </view>
+  <view class="item">
+    <image src="https://s1.ax1x.com/2023/03/19/ppYnnfI.png" mode="heightFix" />
+    <view class="right">
+      <text style="font-size: 35rpx;font-weight: 600;opacity: 0.5;">敬请期待</text>
+      <view style="font-size: 25rpx;opacity: 0.5;">敬请期待</view>
+    </view>
+  </view>
+  <view class="item">
+    <image src="https://s1.ax1x.com/2023/03/19/ppYnnfI.png" mode="heightFix" />
+    <view class="right">
+      <text style="font-size: 35rpx;font-weight: 600;opacity: 0.5;">敬请期待</text>
+      <view style="font-size: 25rpx;opacity: 0.5;">敬请期待</view>
+    </view>
+  </view>
+  <view class="item">
+    <image src="https://s1.ax1x.com/2023/03/19/ppYnnfI.png" mode="heightFix" />
+    <view class="right">
+      <text style="font-size: 35rpx;font-weight: 600;opacity: 0.5;">敬请期待</text>
+      <view style="font-size: 25rpx;opacity: 0.5;">敬请期待</view>
+    </view>
+  </view>
+</view>
+<!-- <ad unit-id="adunit-05c50ad8883a0ee1" ad-type="video" ad-theme="white"></ad> -->
